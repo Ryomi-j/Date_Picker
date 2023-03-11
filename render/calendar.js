@@ -1,5 +1,5 @@
 import { getAllDOM, getDOM } from '../utils/editDOM.js';
-import { $monthDays, date } from './index.js';
+import { $monthDays, date } from '../vars/dom.js';
 
 export const calendar = () => {
     date.setDate(1);

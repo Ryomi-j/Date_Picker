@@ -47,7 +47,7 @@ h1 {
 
 .calendar {
   --display: none;
-  /* display: var(--display); */
+  display: var(--display);
 
   width: var(--calendar-size);
   height: calc(var(--calendar-size) * 1.3);
