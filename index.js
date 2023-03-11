@@ -1,5 +1,6 @@
+import { selectDate } from './modules/selectDate.js';
 import { calendar } from './render/calendar.js';
-import { $body, calendarFrame, showDate } from './vars/dom.js';
+import { $body, $monthDays, calendarFrame, showDate } from './vars/dom.js';
 
 function init() {
   calendar();
@@ -12,5 +13,11 @@ function init() {
     e.stopPropagation();
     calendarFrame.style.setProperty('--display', 'block');
   });
+
+  $monthDays.addEventListener('click', (e) => {
+    e.stopPropagation();
+    selectDate(e);
+  });
 }
+
 init();
