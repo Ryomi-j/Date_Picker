@@ -39,8 +39,6 @@ h1 {
 
 .container {
   position: relative;
-  /* width: 45rem;
-  height: 52rem; */
   color: #222227;
   margin: 1rem 35rem;
 }
@@ -71,25 +69,15 @@ h1 {
 }
 
 .calendar-nav i {
-  /* font-size: 2.5rem; */
   cursor: pointer;
 }
 
 .calendar-nav h2 {
-  /* font-size: 3rem; */
   font-weight: 400;
   text-transform: uppercase;
   letter-spacing: 0.2rem;
   margin-bottom: 1rem;
 }
-
-/* .calendar-nav p {
-  font-size: 1.6rem;
-} */
-
-/* .calendar-grid {
-  height: calc(var(--calendar-size) * 1.5);
-} */
 
 .weekdays {
   width: inherit;
@@ -102,7 +90,6 @@ h1 {
 .weekdays div {
   font-weight: 400;
   letter-spacing: 0.1rem;
-  /* width: calc(44.2rem / 7); */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -113,10 +100,9 @@ h1 {
   grid-template-rows: repeat(6, 1fr);
   grid-template-columns: repeat(7, 1fr);
   align-items: center;
-  /* gap: 0 0.7rem; */
   width: var(--calendar-size);
   height: calc(var(--calendar-size) * 0.85);
-  /* padding: 0 0.4rem 1rem; */
+  padding: 0 calc(var(--calendar-size) * 0.01);
   text-align: center;
 }
 
@@ -130,7 +116,6 @@ h1 {
 }
 
 .days div:hover:not(.today) {
-  /* padding: 1rem; */
   background-color: #3fd357;
   border: 2px solid #3fd357;
   border-radius: 50%;
