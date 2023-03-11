@@ -1,5 +1,5 @@
-import { getDOM } from "../utils/editDOM.js";
-import { calendarFrame, date, showDate } from "../vars/dom.js";
+import { getDOM } from '../utils/editDOM.js';
+import { $calendarFrame, date, $showDate } from '../vars/dom.js';
 
 export function selectDate(e) {
   if (e.target && !e.target.classList.contains('date')) return;
@@ -36,6 +36,6 @@ export function selectDate(e) {
     yyyy = mm === '01' ? yyyy + 1 : yyyy;
     console.log(`${yyyy}-${mm}-${dd}`);
   }
-  showDate.value = `${yyyy}-${mm}-${dd}`;
-  calendarFrame.style.setProperty('--display', 'none');
+  $showDate.value = `${yyyy}-${mm}-${dd}`;
+  $calendarFrame.style.setProperty('--display', 'none');
 }
