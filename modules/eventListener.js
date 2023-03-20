@@ -4,9 +4,9 @@ import { selectDate } from './selectDate.js';
 
 export function events() {
   $body.addEventListener('click', (e) => {
-    console.log(e.target.className);
-    if (e.target.classList.contains('calendar-nav') || e.target.classList.contains('weekday')) return;
-    $calendarFrame.style.removeProperty('--display', 'block');
+    if (e.target.tagName === 'H1' || e.target.tagName === 'BODY'){
+      $calendarFrame.style.removeProperty('--display', 'block');
+    }
   });
 
   $showDate.addEventListener('click', (e) => {
